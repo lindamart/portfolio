@@ -2,14 +2,19 @@
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or
  avatar, and links to sections about them, their work, and how to contact them
+
 WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
+
 WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
+
 WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others
+
 WHEN I click on the images of the applications
 THEN I am taken to that deployed application
+
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport */
 
@@ -24,7 +29,7 @@ header {
     color: white;
     text-align: center;
   }
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+/* Sticky navbar - goes between relative and fixed, depending on the scroll position. */
 .navbar {
     overflow: hidden;
     background-color: #1B4F72;
@@ -44,34 +49,54 @@ header {
     text-decoration: none;
   }
 
-  /* Active/current link */
+  /* Active/current link in navbar*/
 .navbar a.active {
     background-color: #666;
     color: white;
   }
 
-  /* Change color on hover */
+  /* Change color on hover in navbar */
 .navbar a:hover {
     background-color: #ddd;
     color: #154360;
   }
 
 
+/* Image details */
+img {
+  border-radius: 50%;
+  align-items: center;
 
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba (0, 140, 186, 0.5);
+}
  
- 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
   
+h2, p, a {
+  display: block;
+  font-family: 'Bellota';
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+ /* Responsive layout 900px & 400px */
   @media screen and (max-width: 900px) {
     .navbar a {
       width: 100%;
       height: auto;
       position: relative;
     }
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
- 
- 
   @media screen and (max-width: 400px) {
     .navbar a {
       float: none;
       width: 100%;
-    }
+  }
