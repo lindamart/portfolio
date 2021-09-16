@@ -1,86 +1,9 @@
-/* GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or
- avatar, and links to sections about them, their work, and how to contact them
-
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport */
-
+/* Background color gradient change left to right */
 body {
-    background-image: linear-gradient(to right, #2E86C1, #5DADE2, #85C1E9);
+  background-image: linear-gradient(to right, #2E86C1, #5DADE2, #85C1E9);
 }
-
+/* Header */
 header {
-    display: block;
-    font-family: 'Bellota';
-    font-size: 30px;
-    color: white;
-    text-align: center;
-  }
-/* Sticky navbar - goes between relative and fixed, depending on the scroll position. */
-.navbar {
-    overflow: hidden;
-    background-color: #1B4F72;
-    position: sticky;
-    top: 0;
-    font-family: 'Bellota';
-    
-  }
-
-  /* Style the navigation bar links */
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
-
-  /* Active/current link in navbar*/
-.navbar a.active {
-    background-color: #666;
-    color: white;
-  }
-
-  /* Change color on hover in navbar */
-.navbar a:hover {
-    background-color: #ddd;
-    color: #154360;
-  }
-
-
-/* Image details */
-img {
-  border-radius: 50%;
-  align-items: center;
-
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba (0, 140, 186, 0.5);
-}
- 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-}
-  
-h2, p, a {
   display: block;
   font-family: 'Bellota';
   font-size: 30px;
@@ -88,15 +11,115 @@ h2, p, a {
   text-align: center;
 }
 
- /* Responsive layout 900px & 400px */
-  @media screen and (max-width: 900px) {
-    .navbar a {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
+/* Sticky navbar - goes between relative and fixed, depending on the scroll position. */
+
+.navbar {
+  overflow: hidden;
+  background-color: #1B4F72;
+  position: sticky;
+  top: 0;
+  font-family: 'Bellota';
+}
+
+/* Style for navigation bar links */
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color when hover in navbar */
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: #154360;
+}
+
+/* Image details */
+
+.rounded-pic {
+  border-radius: 50%;
+  align-items: center;
+}
+
+img {
+  backface-visibility: hidden;
+}
+/* image thumbnail details */
+.thumbnail:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 500px;
+  height: auto;
+  z-index: 999;
+  backface-visibility: hidden;
+}
+/* button for code link */
+.special-button {
+  border: 1px solid black;
+  display: block;
+  background: #BFC9CA;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: auto;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  font-size: medium;
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+/* Font details */
+h2, h3, h4, p, a {
+  display: block;
+  font-family: 'Bellota';
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+/* Linked in Image button details */
+#idLinkedInIcon {
+  background-color: rgb(0, 102, 170);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font: bold 40px Arial, Helvetica, sans-serif;
+  height: 40px;
+  margin-top: 1px;
+  text-align: center;
+  width: 40px;
+  margin: 0 auto;
+}
+
+#idLinkedInIcon:hover {
+  background-color: #06d;
+}
+
+/* Responsive layout 900px & 400px */
+
+@media screen and (max-width: 900px) {
+  .navbar a {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
