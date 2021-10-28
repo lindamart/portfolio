@@ -5,25 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linda Martinez Portfolio</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
 <!-- Header  -->
 <header>
-    <h1>Linda Martinez</h1>
-    <p>Full Stack Junior Developer</p>
+   
+  <div class="hero-image">
+    <div class="hero-text">
+        <h1>Linda Martinez</h1>
+        <p>Full Stack Junior Developer</p>
+    </div>
+</div>
+
+<div class="navbar">
+  <a href="#about-me">About Me</a>
+  <a href="#my-projects">Projects</a>
+  <a href="#contact-info">Contact Info</a>
+</div>
+
+    <!-- <h1>Linda Martinez</h1>
+    <p>Full Stack Junior Developer</p> -->
 </header>
 <!-- Navbar -->
 <main>
-    <div class="navbar">
+    <!-- <div class="navbar">
         <a href="#about-me">About Me</a>
         <a href="#my-projects">Projects</a>
         <a href="#contact-info">Contact Info</a>
-      </div>
+      </div> -->
 
 
     <!-- About Me -->
@@ -41,19 +60,42 @@
     
 
     <!-- My Projects -->
+
+    
     <section id="my-projects">
       <h3>Projects</h3>
       <p>Click on my projects below to see project details.</p>
 
       <a href="https://github.com/lindamart"><img class="rounded-pic" alt="Linda Martinez Github" src="git.jpg" style="width:42px;height:42px;"></a>
-      <div class="project"></a>
+      <div class="project"></div>
 
-          <p>Refacor Project HTML/CSS</p>
-      <a href="https://lindamart.github.io/refactoring-html-project/">
-        <img class="thumbnail" alt="HTML Refacotring" src="refactor-project.jpg" width="200" height="300"></a>
+       <!-- Add classes to create a row with content having space around it -->
+       <section class="row justify-content-around">
+        <!-- Add classes to create a column that spans full width on mobile, half width on medium screens, and 1/3 on larger screens -->
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+          <div class="card">
+            <h3 class="card-header text-dark">
+              Refacor Project HTML/CSS
+            </h3>
+            <div class="card-body">
+              <p class="card-text">
+                 <a href="https://lindamart.github.io/refactoring-html-project/">
+          <img class="thumbnail" alt="HTML Refacotring" src="refactor-project.jpg" width="200" height="300"></a>
+              </p>
+              <button class="btn btn-block btn-info" href='https://github.com/lindamart/refactoring-html-project'>Code</button>
+            </div>
+          </div>
+        </div>
 
-        <a class="special-button" href='https://github.com/lindamart/refactoring-html-project'>Code</a>
-    </section>
+      <div class="container p-3 my-3 bg-dark text-white">
+        <!-- <p>Refacor Project HTML/CSS</p> -->
+        <!-- <a href="https://lindamart.github.io/refactoring-html-project/">
+          <img class="thumbnail" alt="HTML Refacotring" src="refactor-project.jpg" width="200" height="300"></a> -->
+  
+          <!-- <a class="special-button" href='https://github.com/lindamart/refactoring-html-project'>Code</a> -->
+      </section>
+      </div>
+         
 
     <p>Landing Page</p>
       <a href="https://lindamart.github.io/mini-project-1.22/index.html">
