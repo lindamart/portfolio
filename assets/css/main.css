@@ -156,7 +156,8 @@ h2, h4, h5 {
   display: block;
   font-family: 'Bellota';
   font-size: 50px;
-  color: white;
+  font-weight: bolder;
+  color: #1B4F72;
   text-align: center;
 }
 /* Linked in Image button details */
