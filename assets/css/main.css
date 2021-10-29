@@ -11,6 +11,15 @@ header {
   text-align: center;
 }
 
+.row {
+  justify-content: flex-start;
+}
+h1 {
+  padding-top: 20%;
+}
+.subtext {
+  padding-bottom: 20%;
+}
 /* Hero  */
 
 html, body {
@@ -31,7 +40,7 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-  
+.
 .hero-text {
   text-align: center;
   color: white;
@@ -121,12 +130,14 @@ img {
   
 }
 
-.center {
+/* .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
-}
+} */
+
+
 /* Font details */
 h2, h3, h4, p, a {
   display: block;
@@ -155,7 +166,8 @@ h2, h3, h4, p, a {
 
 /* Responsive layout 900px & 400px */
 
-@media screen and (max-width: 900px) {
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)  {
   .navbar a {
     width: 100%;
     height: auto;
@@ -163,7 +175,8 @@ h2, h3, h4, p, a {
   }
 }
 
-@media screen and (max-width: 400px) {
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
   .navbar a {
     float: none;
     width: 100%;

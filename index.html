@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linda Martinez Portfolio</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linda Martinez Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -17,110 +18,148 @@
 </head>
 
 <body>
-<!-- Header  -->
-<header>
-   
-  <div class="hero-image">
-    <div class="hero-text">
+  <!-- Header  -->
+  <header>
+    <div class="hero-image">
+      <div class="hero-text">
         <h1>Linda Martinez</h1>
-        <p>Full Stack Junior Developer</p>
+        <div class="subtext">Full Stack Junior Developer</div>
+
+
+      </div>
     </div>
-</div>
 
-<div class="navbar">
-  <a href="#about-me">About Me</a>
-  <a href="#my-projects">Projects</a>
-  <a href="#contact-info">Contact Info</a>
-</div>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="#about-me">About Me</a>
+      <a href="#my-projects">Projects</a>
+      <a href="#contact-info">Contact Info</a>
+    </div>
+  </header>
 
-    <!-- <h1>Linda Martinez</h1>
-    <p>Full Stack Junior Developer</p> -->
-</header>
-<!-- Navbar -->
-<main>
-    <!-- <div class="navbar">
-        <a href="#about-me">About Me</a>
-        <a href="#my-projects">Projects</a>
-        <a href="#contact-info">Contact Info</a>
-      </div> -->
+  <main>
+    <!-- Add a class to create a row -->
+    <section class="row">
 
+      <!-- About Me -->
 
-    <!-- About Me -->
-      <section id="about-me">
-      <a target="_blank" href="Linda.jpg"><img src="Linda.jpg" alt="Linda Martinez" class="center" width="150" height="175"></a>
-  
-      <h2>About Linda</h2>
+      <div class="container col-md-2 mt-3 ">
+        <div id="about-me">
+          <a target="_blank" href="Linda.jpg"><img src="Linda.jpg" alt="Linda Martinez" class="center" width="150"
+              height="175"></a>
+        </div>
+      </div>
+        <div class="container col-md-10 mt-3">
+          <h2>About Linda</h2>
 
-      <p>After 17 years in the life insurance industry representing the business in their technical needs, 
-          I have recently decided to change sides and start working in the development of thier systems.  
-          This gives me the added insight of a user, tester and now a developer.  As a new developer coding 
-          in HTML, CSS & JavaScript, I can develope with all roles in mind.  Please feel free to see my projects 
-          page for some examples.</p>
-    </section>
-    
+          <p>After 17 years in the life insurance industry representing the business in their technical needs,
+            I have recently decided to change sides and start working in the development of thier systems.
+            This gives me the added insight of a user, tester and now a developer. As a new developer coding
+            in HTML, CSS & JavaScript, I can develope with all roles in mind. Please feel free to see my projects
+            page for some examples.</p>
 
-    <!-- My Projects -->
+        </div>
 
     
-    <section id="my-projects">
-      <h3>Projects</h3>
-      <p>Click on my projects below to see project details.</p>
 
-      <a href="https://github.com/lindamart"><img class="rounded-pic" alt="Linda Martinez Github" src="git.jpg" style="width:42px;height:42px;"></a>
-      <div class="project"></div>
+  </main>
+  <!-- My Projects -->
 
-       <!-- Add classes to create a row with content having space around it -->
-       <section class="row justify-content-around">
+
+  <section id="my-projects">
+    <h3>Projects</h3>
+    <p>Click on my projects below to see project details.</p>
+
+    <a href="https://github.com/lindamart"><img class="rounded-pic" alt="Linda Martinez Github" src="git.jpg"
+        style="width:42px;height:42px;"></a>
+    <div class="project"></div>
+
+    <!-- Add classes to create a row with content having space around it -->
+
+    <section class="row justify-content-around">
+
+      <div class="container p-3 my-3 text-white">
         <!-- Add classes to create a column that spans full width on mobile, half width on medium screens, and 1/3 on larger screens -->
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="col-12 col-md-6 mb-3">
+
           <div class="card">
+
             <h3 class="card-header text-dark">
-              Refacor Project HTML/CSS
+              Hero Generator
             </h3>
             <div class="card-body">
-              <p class="card-text">
-                 <a href="https://lindamart.github.io/refactoring-html-project/">
-          <img class="thumbnail" alt="HTML Refacotring" src="refactor-project.jpg" width="200" height="300"></a>
-              </p>
-              <button class="btn btn-block btn-info" href='https://github.com/lindamart/refactoring-html-project'>Code</button>
+
+              <a href="https://lindamart.github.io/Interactive_FrontEnd_HeroApp/">
+                <img class="thumbnail" alt="HTML Refacotring" src="heroGen.jpg" width="200" height="300"></a>
+
+              <a href="https://github.com/lindamart/Interactive_FrontEnd_HeroApp" class="btn btn-block btn-info"
+                role="button">Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="container p-3 my-3 text-white">
+          <!-- Add classes to create a column that spans full width on mobile, half width on medium screens, and 1/3 on larger screens -->
+          <div class="col-12 col-md-6 mb-3">
+            <div class="card">
+              <h3 class="card-header text-dark">
+                Landing Page
+              </h3>
+              <div class="card-body">
+
+                <a href="https://lindamart.github.io/mini-project-1.22/index.html">
+                  <img class="thumbnail" alt="Landing Page" src="contact-landing-pg.jpg" width="200" height="300">
+                </a>
+
+                <a href="https://github.com/lindamart/mini-project-1.22" class="btn btn-block btn-info"
+                  role="button">Code</a>
+              </div>
             </div>
           </div>
         </div>
 
-      <div class="container p-3 my-3 bg-dark text-white">
-        <!-- <p>Refacor Project HTML/CSS</p> -->
-        <!-- <a href="https://lindamart.github.io/refactoring-html-project/">
-          <img class="thumbnail" alt="HTML Refacotring" src="refactor-project.jpg" width="200" height="300"></a> -->
-  
-          <!-- <a class="special-button" href='https://github.com/lindamart/refactoring-html-project'>Code</a> -->
-      </section>
-      </div>
-         
+        <div class="container p-3 my-3 text-white">
+          <!-- Add classes to create a column that spans full width on mobile, half width on medium screens, and 1/3 on larger screens -->
+          <div class="col-12 col-md-6 mb-3">
 
-    <p>Landing Page</p>
-      <a href="https://lindamart.github.io/mini-project-1.22/index.html">
-        <img class="thumbnail" alt="Landing Page" src="contact-landing-pg.jpg" width="200" height="300">
-      </a>
-        <a class="special-button" href='https://github.com/lindamart/mini-project-1.22'>Code</a>
-    
-    
+            <div class="card">
 
-   <!-- Contact Me -->
-    <section id="contact-info">
-    <h4>Contact Me</h4>
-      <p>Email</p>
-      <a  href="mailto:lindanmjw@gmail.com?"><img class="rounded-pic" src="mail.jpg" alt="Click here to send me an email" 
-        style="width:42px;height:42px;"></a>
-      
-       
-       <p>Social Media</p>
-       <div id="idLinkedInIcon" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=www.linkedin.com/in/linda-m-319246217');" title="Linda Martinez Linkedin">in</div>
+              <h3 class="card-header text-dark">
+                Hero Generator
+              </h3>
+              <div class="card-body">
 
+                <a href="https://lindamart.github.io/third_party_api_workdayscheduler/">
+                  <img class="thumbnail" alt="HTML Refacotring" src="workDaySched.jpg" width="200" height="300"></a>
+
+                <a href="https://github.com/lindamart/third_party_api_workdayscheduler" class="btn btn-block btn-info"
+                  role="button">Code</a>
+              </div>
+            </div>
+          </div>
     </section>
-    
-  
 
-    
-</main>   
+  </section>
+
+  <!-- Contact Me -->
+  <section id="contact-info">
+    <h4>Contact Me</h4>
+    <p>Email</p>
+    <a href="mailto:lindanmjw@gmail.com?"><img class="rounded-pic" src="mail.jpg" alt="Click here to send me an email"
+        style="width:42px;height:42px;"></a>
+
+
+    <p>Social Media</p>
+    <div id="idLinkedInIcon"
+      onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=www.linkedin.com/in/linda-m-319246217');"
+      title="Linda Martinez Linkedin">in</div>
+
+
+  </section>
+
+
+
+
+
 </body>
+
 </html>
