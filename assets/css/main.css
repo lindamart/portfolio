@@ -1,22 +1,23 @@
 /* Background color gradient change left to right */
 body {
-  background-image: linear-gradient(to right, #2E86C1, #5DADE2, #85C1E9);
+  background-image: linear-gradient(to right, #107a79, #73c9c7, #57acbb);
+  display: block;
+  font-family: 'Bellota';
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 /* Header */
 header {
   display: block;
   font-family: 'Bellota';
   font-size: 30px;
+  font-weight: bold;
   color: white;
   text-align: center;
 }
 
-/* .row {
-  justify-content: flex-start;
-} */
-/* h1 {
-  padding-top: 20%;
-} */
 .subtext {
   padding-bottom: 20%;
 
@@ -99,16 +100,7 @@ opacity: .5;
   color: #154360;
 }
 
-/* Image details */
 
-.rounded-pic {
-  border-radius: 50%;
-  align-items: center;
-}
-
-img {
-  backface-visibility: hidden;
-}
 /* image thumbnail details */
 .thumbnail:hover {
   position: relative;
@@ -133,21 +125,15 @@ img {
   color: black;
   font-size: medium;
   
+  
 }
-
-/* .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-} */
-
 
 /* Font details */
 h3, p, a {
   display: block;
   font-family: 'Bellota';
   font-size: 30px;
+  font-weight: bold;
   color: white;
   text-align: center;
 }
@@ -160,25 +146,9 @@ h2, h4, h5 {
   color: #1B4F72;
   text-align: center;
 }
-/* Linked in Image button details */
-#idLinkedInIcon {
-  background-color: rgb(0, 102, 170);
-  border-radius: 50%;
-  color: white;
-  cursor: pointer;
-  font: bold 40px Arial, Helvetica, sans-serif;
-  height: 40px;
-  margin-top: 1px;
-  text-align: center;
-  width: 40px;
-  margin: 0 auto;
-}
 
-#idLinkedInIcon:hover {
-  background-color: #06d;
-}
 
-/* Responsive layout 900px & 400px */
+/* Responsive layout 992px & 576px */
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px)  {
